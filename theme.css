@@ -2,12 +2,6 @@
 
 :root {
     --resumeCardScale: 1.3;
-}
-
-:root{
-  --overlayPlayButtonPosition: 50%;
-}
-
-:root{
-  --cardHoverEffect: none;
+    --cardHoverEffect: none;
+    --overlayPlayButtonPosition: 50%;
 }
