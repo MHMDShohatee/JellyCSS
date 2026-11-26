@@ -6,18 +6,16 @@
     --resumeCardScale: 1.3;
     --cardHoverEffect: none;
     --overlayPlayButtonPosition: 50%;
-
+    
     /* Gradient points */
     --darkerGradientPoint: rgb(17, 24, 39);
     --darkerGradientPointAlpha: rgba(17, 24, 39, .85);
-
     --lighterGradientPoint: rgb(29, 38, 53);
     --lighterGradientPointAlpha: rgba(18, 161, 54, .85);
-
+    
     /* Header / drawer */
     --headerColor: rgba(30, 40, 54, .8);
     --drawerColor: rgba(30, 40, 54, .9);
-
     --headerColorGradient:
         linear-gradient(
             180deg,
@@ -25,16 +23,16 @@
             55%,
             transparent 90%
         );
-
+    
     /* Borders */
     --borderColor: rgb(71, 80, 92);
     --darkerBorderColor: rgb(49, 55, 63);
     --lighterBorderColor: rgba(255, 255, 255, .2);
-
+    
     /* Selectors */
     --selectorBackgroundColor: rgb(36, 36, 36);
     --selectorBackgroundColorAlpha: rgba(55, 65, 81, .5);
-
+    
     /* Buttons */
     --btnMiniPlayColor: rgb(67, 254, 105);
     --btnMiniPlayBorderColor: rgb(188, 245, 192);
@@ -42,36 +40,47 @@
     --btnDeleteBorderColor: rgb(217, 84, 84);
     --btnSubmitColor: rgb(36, 188, 66);
     --btnSubmitBorderColor: rgb(255, 255, 255);
-}
+    }
+    
+    /* 3. Main Header Logo (Home, Library, Media pages) */
+    .headerBrandLink {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px;
+    }
 
-/* 3. Main Header Logo */
-.skinHeader .pageTitleWithLogo {
-    background-image: url("https://cdn.jsdelivr.net/gh/MHMDShohatee/JellyCSS@main/logo.png") !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: left center !important;
+    .headerBrandLink img {
+    display: none !important;
+    }
+
+    .headerBrandLink::before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("https://cdn.jsdelivr.net/gh/MHMDShohatee/JellyCSS@main/logo.png") center / contain no-repeat;
 }
 
 /* 4. Admin Dashboard Sidebar Logo (MUI) */
 .MuiButton-startIcon > img {
-    content: url("https://cdn.jsdelivr.net/gh/MHMDShohatee/JellyCSS@main/logo.png") !important;
-    max-height: 2em !important; /* inline style is 1.25em, so !important is needed */
-    max-width: 2em !important;
+content: url("https://cdn.jsdelivr.net/gh/MHMDShohatee/JellyCSS@main/logo.png") !important;
+max-height: 2em !important; /* inline style is 1.25em, so !important is needed */
+max-width: 2em !important;
 }
 
 /* 5. Watch progress bar fill color on cards & video player */
 .itemProgressBarForeground {
-    background-color: rgb(67, 254, 105) !important;
+background-color: rgb(67, 254, 105) !important;
 }
 
 .itemProgressBar {
-    background-color: rgba(255, 255, 255, 0.25) !important;
+background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 progress.itemProgressBar::-webkit-progress-value {
-    background-color: rgb(67, 254, 105) !important;
+background-color: rgb(67, 254, 105) !important;
 }
 
 progress.itemProgressBar::-moz-progress-bar {
-    background-color: rgb(67, 254, 105) !important;
+background-color: rgb(67, 254, 105) !important;
 }
