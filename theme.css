@@ -1,12 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/ElegantFin-jellyfin-theme-build-latest-minified.css");
 
-/* New (MUI) admin dashboard logo */
-.MuiButton-startIcon > img {
-    content: url("https://i.imgur.com/wG50UFC.png") !important;
-    max-height: 2em !important;   / inline style is 1.25em, so !important is needed */
-    max-width: 2em !important;
-}
-
 :root {
     --resumeCardScale: 1.3;
     --cardHoverEffect: none;
