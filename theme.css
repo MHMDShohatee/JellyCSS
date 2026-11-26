@@ -42,7 +42,7 @@
     --btnSubmitBorderColor: rgb(255, 255, 255);
 }
 
-/* New (MUI) admin dashboard logo /
+/* New (MUI) admin dashboard logo */
 .MuiButton-startIcon > img {
     content: url("https://i.imgur.com/wG50UFC.png") !important;
     max-height: 2em !important;   / inline style is 1.25em, so !important is needed */
