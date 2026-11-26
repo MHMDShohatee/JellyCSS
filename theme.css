@@ -44,23 +44,12 @@
     --btnSubmitBorderColor: rgb(255, 255, 255);
 }
 
-/* 3. Main Header Logo (Home, Library, Media pages) */
-.headerBrandLink {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px;
-}
-
-.headerBrandLink img {
-    display: none !important;
-}
-
-.headerBrandLink::before {
-    content: "";
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    background: url("https://cdn.jsdelivr.net/gh/MHMDShohatee/JellyCSS@main/logo.png") center / contain no-repeat;
+/* 3. Main Header Logo */
+.skinHeader .pageTitleWithLogo {
+    background-image: url("https://cdn.jsdelivr.net/gh/MHMDShohatee/JellyCSS@main/logo.png") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
 }
 
 /* 4. Admin Dashboard Sidebar Logo (MUI) */
