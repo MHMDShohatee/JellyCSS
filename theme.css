@@ -61,13 +61,6 @@
     background: url("https://cdn.jsdelivr.net/gh/MHMDShohatee/JellyCSS@main/logo.png") center / contain no-repeat;
 }
 
-/* 4. Admin Dashboard Sidebar Logo (MUI) */
-.MuiButton-startIcon > img {
-content: url("https://cdn.jsdelivr.net/gh/MHMDShohatee/JellyCSS@main/logo.png") !important;
-max-height: 2em !important; /* inline style is 1.25em, so !important is needed */
-max-width: 2em !important;
-}
-
 /* 5. Watch progress bar fill color on cards & video player */
 .itemProgressBarForeground {
 background-color: rgb(67, 254, 105) !important;
